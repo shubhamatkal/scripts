@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Checking internet speed..."
+speedtest-cli --simple
