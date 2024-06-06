@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "System Information"
+echo "=================="
+
+echo "Hostname: $(hostname)"
+echo "Operating System: $(uname -o)"
+echo "Kernel Version: $(uname -r)"
+echo "Uptime: $(uptime -p)"
+
+echo "CPU Usage:"
+mpstat | grep "all"
+
+echo "Memory Usage:"
+free -h
+
+echo "Disk Usage:"
+df -h
+
